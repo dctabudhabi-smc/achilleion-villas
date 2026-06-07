@@ -522,7 +522,8 @@ footer{background:var(--ink);border-top:1px solid var(--line);padding:clamp(3.5r
 <section class="hero" id="top">
   <div class="media" style="background-image:url('assets/img/poster-hero.jpg')"></div>
   <video autoplay muted loop playsinline poster="assets/img/poster-hero.jpg">
-    <source src="assets/video/hero.mp4" type="video/mp4">
+    <source src="assets/video/hero.mp4" type="video/mp4" media="(min-width: 821px)">
+    <source src="assets/video/hero-mobile.mp4" type="video/mp4">
   </video>
   <div class="scrim"></div><div class="scrim2"></div>
   <div class="hero-inner wrap">
@@ -604,7 +605,7 @@ footer{background:var(--ink);border-top:1px solid var(--line);padding:clamp(3.5r
         </ul>
       </div>
       <div class="fig reveal d2">
-        <img src="assets/img/eliz-feature.jpg" alt="Aerial view of Villa Elizabeth and its pool" loading="lazy" decoding="async">
+        <picture><source type="image/webp" srcset="assets/img/eliz-feature.webp"><img src="assets/img/eliz-feature.jpg" alt="Aerial view of Villa Elizabeth and its pool" loading="lazy" decoding="async"></picture>
         <span class="cap">Aerial · Villa Elizabeth</span>
       </div>
     </div>
@@ -620,18 +621,18 @@ footer{background:var(--ink);border-top:1px solid var(--line);padding:clamp(3.5r
 
   <div class="wrap" style="padding-bottom:clamp(4rem,9vw,7rem)">
     <div class="section-head reveal"><div class="divider"></div><h2>The <em>gallery</em></h2></div>
-    <div class="gallery" data-gallery="elizabeth"><figure class="g-item reveal" data-cap="Aerial of the estate"><img loading="lazy" src="assets/img/eliz-g01.jpg" alt="Aerial of the estate"><figcaption class="gcap">Aerial of the estate</figcaption></figure>
-<figure class="g-item reveal" data-cap="Infinity pool &amp; Ionian views"><img loading="lazy" src="assets/img/eliz-g02.jpg" alt="Infinity pool &amp; Ionian views"><figcaption class="gcap">Infinity pool &amp; Ionian views</figcaption></figure>
-<figure class="g-item reveal" data-cap="Poolside terrace"><img loading="lazy" src="assets/img/eliz-g03.jpg" alt="Poolside terrace"><figcaption class="gcap">Poolside terrace</figcaption></figure>
-<figure class="g-item reveal" data-cap="The pool at golden hour"><img loading="lazy" src="assets/img/eliz-g04.jpg" alt="The pool at golden hour"><figcaption class="gcap">The pool at golden hour</figcaption></figure>
-<figure class="g-item reveal" data-cap="Pool by night"><img loading="lazy" src="assets/img/eliz-g05.jpg" alt="Pool by night"><figcaption class="gcap">Pool by night</figcaption></figure>
-<figure class="g-item reveal" data-cap="Sun terrace &amp; mountains"><img loading="lazy" src="assets/img/eliz-g06.jpg" alt="Sun terrace &amp; mountains"><figcaption class="gcap">Sun terrace &amp; mountains</figcaption></figure>
-<figure class="g-item reveal" data-cap="Open kitchen &amp; island"><img loading="lazy" src="assets/img/eliz-g07.jpg" alt="Open kitchen &amp; island"><figcaption class="gcap">Open kitchen &amp; island</figcaption></figure>
-<figure class="g-item reveal" data-cap="Living room"><img loading="lazy" src="assets/img/eliz-g08.jpg" alt="Living room"><figcaption class="gcap">Living room</figcaption></figure>
-<figure class="g-item reveal" data-cap="Principal bedroom"><img loading="lazy" src="assets/img/eliz-g09.jpg" alt="Principal bedroom"><figcaption class="gcap">Principal bedroom</figcaption></figure>
-<figure class="g-item reveal" data-cap="Bedroom with garden access"><img loading="lazy" src="assets/img/eliz-g10.jpg" alt="Bedroom with garden access"><figcaption class="gcap">Bedroom with garden access</figcaption></figure>
-<figure class="g-item reveal" data-cap="Guest bedroom"><img loading="lazy" src="assets/img/eliz-g11.jpg" alt="Guest bedroom"><figcaption class="gcap">Guest bedroom</figcaption></figure>
-<figure class="g-item reveal" data-cap="En-suite bathroom"><img loading="lazy" src="assets/img/eliz-g12.jpg" alt="En-suite bathroom"><figcaption class="gcap">En-suite bathroom</figcaption></figure></div>
+    <div class="gallery" data-gallery="elizabeth"><figure class="g-item reveal" data-cap="Aerial of the estate"><picture><source type="image/webp" srcset="assets/img/eliz-g01.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g01.jpg" alt="Aerial of the estate"></picture><figcaption class="gcap">Aerial of the estate</figcaption></figure>
+<figure class="g-item reveal" data-cap="Infinity pool &amp; Ionian views"><picture><source type="image/webp" srcset="assets/img/eliz-g02.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g02.jpg" alt="Infinity pool &amp; Ionian views"></picture><figcaption class="gcap">Infinity pool &amp; Ionian views</figcaption></figure>
+<figure class="g-item reveal" data-cap="Poolside terrace"><picture><source type="image/webp" srcset="assets/img/eliz-g03.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g03.jpg" alt="Poolside terrace"></picture><figcaption class="gcap">Poolside terrace</figcaption></figure>
+<figure class="g-item reveal" data-cap="The pool at golden hour"><picture><source type="image/webp" srcset="assets/img/eliz-g04.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g04.jpg" alt="The pool at golden hour"></picture><figcaption class="gcap">The pool at golden hour</figcaption></figure>
+<figure class="g-item reveal" data-cap="Pool by night"><picture><source type="image/webp" srcset="assets/img/eliz-g05.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g05.jpg" alt="Pool by night"></picture><figcaption class="gcap">Pool by night</figcaption></figure>
+<figure class="g-item reveal" data-cap="Sun terrace &amp; mountains"><picture><source type="image/webp" srcset="assets/img/eliz-g06.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g06.jpg" alt="Sun terrace &amp; mountains"></picture><figcaption class="gcap">Sun terrace &amp; mountains</figcaption></figure>
+<figure class="g-item reveal" data-cap="Open kitchen &amp; island"><picture><source type="image/webp" srcset="assets/img/eliz-g07.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g07.jpg" alt="Open kitchen &amp; island"></picture><figcaption class="gcap">Open kitchen &amp; island</figcaption></figure>
+<figure class="g-item reveal" data-cap="Living room"><picture><source type="image/webp" srcset="assets/img/eliz-g08.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g08.jpg" alt="Living room"></picture><figcaption class="gcap">Living room</figcaption></figure>
+<figure class="g-item reveal" data-cap="Principal bedroom"><picture><source type="image/webp" srcset="assets/img/eliz-g09.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g09.jpg" alt="Principal bedroom"></picture><figcaption class="gcap">Principal bedroom</figcaption></figure>
+<figure class="g-item reveal" data-cap="Bedroom with garden access"><picture><source type="image/webp" srcset="assets/img/eliz-g10.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g10.jpg" alt="Bedroom with garden access"></picture><figcaption class="gcap">Bedroom with garden access</figcaption></figure>
+<figure class="g-item reveal" data-cap="Guest bedroom"><picture><source type="image/webp" srcset="assets/img/eliz-g11.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g11.jpg" alt="Guest bedroom"></picture><figcaption class="gcap">Guest bedroom</figcaption></figure>
+<figure class="g-item reveal" data-cap="En-suite bathroom"><picture><source type="image/webp" srcset="assets/img/eliz-g12.webp"><img loading="lazy" decoding="async" src="assets/img/eliz-g12.jpg" alt="En-suite bathroom"></picture><figcaption class="gcap">En-suite bathroom</figcaption></figure></div>
     <div class="pricecard reveal">
       <div class="pc-l">
         <div class="e">Villa Elizabeth · For Sale</div>
@@ -663,7 +664,7 @@ footer{background:var(--ink);border-top:1px solid var(--line);padding:clamp(3.5r
   <div class="wrap pad">
     <div class="split rev">
       <div class="fig reveal d2">
-        <img src="assets/img/sissy-feature.jpg" alt="Villa Sissy with pool and gardens" loading="lazy" decoding="async">
+        <picture><source type="image/webp" srcset="assets/img/sissy-feature.webp"><img src="assets/img/sissy-feature.jpg" alt="Villa Sissy with pool and gardens" loading="lazy" decoding="async"></picture>
         <span class="cap">The grounds · Villa Sissy</span>
       </div>
       <div class="txt">
@@ -691,18 +692,18 @@ footer{background:var(--ink);border-top:1px solid var(--line);padding:clamp(3.5r
 
   <div class="wrap" style="padding-bottom:clamp(4rem,9vw,7rem)">
     <div class="section-head reveal"><div class="divider"></div><h2>The <em>gallery</em></h2></div>
-    <div class="gallery" data-gallery="sissy"><figure class="g-item reveal" data-cap="Aerial of the grounds"><img loading="lazy" src="assets/img/sissy-g01.jpg" alt="Aerial of the grounds"><figcaption class="gcap">Aerial of the grounds</figcaption></figure>
-<figure class="g-item reveal" data-cap="Pool above the valley"><img loading="lazy" src="assets/img/sissy-g02.jpg" alt="Pool above the valley"><figcaption class="gcap">Pool above the valley</figcaption></figure>
-<figure class="g-item reveal" data-cap="The swimming pool"><img loading="lazy" src="assets/img/sissy-g03.jpg" alt="The swimming pool"><figcaption class="gcap">The swimming pool</figcaption></figure>
-<figure class="g-item reveal" data-cap="Pergola dining"><img loading="lazy" src="assets/img/sissy-g04.jpg" alt="Pergola dining"><figcaption class="gcap">Pergola dining</figcaption></figure>
-<figure class="g-item reveal" data-cap="Loungers &amp; olive groves"><img loading="lazy" src="assets/img/sissy-g05.jpg" alt="Loungers &amp; olive groves"><figcaption class="gcap">Loungers &amp; olive groves</figcaption></figure>
-<figure class="g-item reveal" data-cap="Outdoor BBQ kitchen"><img loading="lazy" src="assets/img/sissy-g06.jpg" alt="Outdoor BBQ kitchen"><figcaption class="gcap">Outdoor BBQ kitchen</figcaption></figure>
-<figure class="g-item reveal" data-cap="Upper house living"><img loading="lazy" src="assets/img/sissy-g07.jpg" alt="Upper house living"><figcaption class="gcap">Upper house living</figcaption></figure>
-<figure class="g-item reveal" data-cap="Balcony with a view"><img loading="lazy" src="assets/img/sissy-g08.jpg" alt="Balcony with a view"><figcaption class="gcap">Balcony with a view</figcaption></figure>
-<figure class="g-item reveal" data-cap="Upper house bedroom"><img loading="lazy" src="assets/img/sissy-g09.jpg" alt="Upper house bedroom"><figcaption class="gcap">Upper house bedroom</figcaption></figure>
-<figure class="g-item reveal" data-cap="Lower house living"><img loading="lazy" src="assets/img/sissy-g10.jpg" alt="Lower house living"><figcaption class="gcap">Lower house living</figcaption></figure>
-<figure class="g-item reveal" data-cap="Arched veranda"><img loading="lazy" src="assets/img/sissy-g11.jpg" alt="Arched veranda"><figcaption class="gcap">Arched veranda</figcaption></figure>
-<figure class="g-item reveal" data-cap="Veranda overlooking green"><img loading="lazy" src="assets/img/sissy-g12.jpg" alt="Veranda overlooking green"><figcaption class="gcap">Veranda overlooking green</figcaption></figure></div>
+    <div class="gallery" data-gallery="sissy"><figure class="g-item reveal" data-cap="Aerial of the grounds"><picture><source type="image/webp" srcset="assets/img/sissy-g01.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g01.jpg" alt="Aerial of the grounds"></picture><figcaption class="gcap">Aerial of the grounds</figcaption></figure>
+<figure class="g-item reveal" data-cap="Pool above the valley"><picture><source type="image/webp" srcset="assets/img/sissy-g02.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g02.jpg" alt="Pool above the valley"></picture><figcaption class="gcap">Pool above the valley</figcaption></figure>
+<figure class="g-item reveal" data-cap="The swimming pool"><picture><source type="image/webp" srcset="assets/img/sissy-g03.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g03.jpg" alt="The swimming pool"></picture><figcaption class="gcap">The swimming pool</figcaption></figure>
+<figure class="g-item reveal" data-cap="Pergola dining"><picture><source type="image/webp" srcset="assets/img/sissy-g04.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g04.jpg" alt="Pergola dining"></picture><figcaption class="gcap">Pergola dining</figcaption></figure>
+<figure class="g-item reveal" data-cap="Loungers &amp; olive groves"><picture><source type="image/webp" srcset="assets/img/sissy-g05.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g05.jpg" alt="Loungers &amp; olive groves"></picture><figcaption class="gcap">Loungers &amp; olive groves</figcaption></figure>
+<figure class="g-item reveal" data-cap="Outdoor BBQ kitchen"><picture><source type="image/webp" srcset="assets/img/sissy-g06.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g06.jpg" alt="Outdoor BBQ kitchen"></picture><figcaption class="gcap">Outdoor BBQ kitchen</figcaption></figure>
+<figure class="g-item reveal" data-cap="Upper house living"><picture><source type="image/webp" srcset="assets/img/sissy-g07.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g07.jpg" alt="Upper house living"></picture><figcaption class="gcap">Upper house living</figcaption></figure>
+<figure class="g-item reveal" data-cap="Balcony with a view"><picture><source type="image/webp" srcset="assets/img/sissy-g08.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g08.jpg" alt="Balcony with a view"></picture><figcaption class="gcap">Balcony with a view</figcaption></figure>
+<figure class="g-item reveal" data-cap="Upper house bedroom"><picture><source type="image/webp" srcset="assets/img/sissy-g09.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g09.jpg" alt="Upper house bedroom"></picture><figcaption class="gcap">Upper house bedroom</figcaption></figure>
+<figure class="g-item reveal" data-cap="Lower house living"><picture><source type="image/webp" srcset="assets/img/sissy-g10.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g10.jpg" alt="Lower house living"></picture><figcaption class="gcap">Lower house living</figcaption></figure>
+<figure class="g-item reveal" data-cap="Arched veranda"><picture><source type="image/webp" srcset="assets/img/sissy-g11.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g11.jpg" alt="Arched veranda"></picture><figcaption class="gcap">Arched veranda</figcaption></figure>
+<figure class="g-item reveal" data-cap="Veranda overlooking green"><picture><source type="image/webp" srcset="assets/img/sissy-g12.webp"><img loading="lazy" decoding="async" src="assets/img/sissy-g12.jpg" alt="Veranda overlooking green"></picture><figcaption class="gcap">Veranda overlooking green</figcaption></figure></div>
     <div class="pricecard reveal">
       <div class="pc-l">
         <div class="e">Villa Sissy · For Sale</div>
@@ -737,19 +738,19 @@ footer{background:var(--ink);border-top:1px solid var(--line);padding:clamp(3.5r
 
     <div class="prox">
       <div class="p reveal">
-        <div class="thumb"><img src="assets/img/tp-palace.jpg" alt="Achilleion Palace" loading="lazy"></div>
+        <div class="thumb"><picture><source type="image/webp" srcset="assets/img/tp-palace.webp"><img src="assets/img/tp-palace.jpg" alt="Achilleion Palace" loading="lazy"></picture></div>
         <div class="p-body"><span class="p-min">5 minutes</span><h4>Achilleion Palace</h4><p>Greece's second most-visited landmark, built by Empress Elisabeth in 1890.</p></div>
       </div>
       <div class="p reveal d1">
-        <div class="thumb"><img src="assets/img/tp-springs.jpg" alt="Forest springs" loading="lazy"></div>
+        <div class="thumb"><picture><source type="image/webp" srcset="assets/img/tp-springs.webp"><img src="assets/img/tp-springs.jpg" alt="Forest springs" loading="lazy"></picture></div>
         <div class="p-body"><span class="p-min">10 minutes</span><h4>Empress's Springs</h4><p>Natural springs running year-round, reached by car or forest trail.</p></div>
       </div>
       <div class="p reveal d2">
-        <div class="thumb"><img src="assets/img/tp-benitses.jpg" alt="Benitses & the coast" loading="lazy"></div>
+        <div class="thumb"><picture><source type="image/webp" srcset="assets/img/tp-benitses.webp"><img src="assets/img/tp-benitses.jpg" alt="Benitses & the coast" loading="lazy"></picture></div>
         <div class="p-body"><span class="p-min">15 minutes</span><h4>Benitses</h4><p>Iconic fishing village - fine fish tavernas, resorts and a modern marina.</p></div>
       </div>
       <div class="p reveal d3">
-        <div class="thumb"><img src="assets/img/tp-town.jpg" alt="Corfu Town" loading="lazy"></div>
+        <div class="thumb"><picture><source type="image/webp" srcset="assets/img/tp-town.webp"><img src="assets/img/tp-town.jpg" alt="Corfu Town" loading="lazy"></picture></div>
         <div class="p-body"><span class="p-min">20 minutes</span><h4>Corfu Town</h4><p>UNESCO World Heritage city of Venetian fortresses, never breached.</p></div>
       </div>
     </div>
@@ -759,14 +760,14 @@ footer{background:var(--ink);border-top:1px solid var(--line);padding:clamp(3.5r
       <h2 style="font-size:clamp(2rem,5vw,3.4rem)">An island to <em>explore</em></h2>
     </div>
     <div class="discover">
-      <div class="dcard reveal"><div class="thumb"><img src="assets/img/td-palace.jpg" alt="The Achilleion Palace" loading="lazy"></div><div class="d-body"><div class="idx">i.</div><h4>The Achilleion Palace</h4><p>A 19th-century masterpiece of frescoes, statues and gardens, dedicated to Achilles, with sweeping views over the Ionian Sea.</p><div class="tag">Heritage · 5 min</div></div></div>
-      <div class="dcard reveal d1"><div class="thumb"><img src="assets/img/td-paleo.jpg" alt="Paleokastritsa" loading="lazy"></div><div class="d-body"><div class="idx">ii.</div><h4>Paleokastritsa</h4><p>Crystalline waters, a clifftop monastery and lush coves - the jewel of the north-west coast.</p><div class="tag">Coast · Beaches</div></div></div>
-      <div class="dcard reveal"><div class="thumb"><img src="assets/img/td-canal.jpg" alt="Canal d'Amour" loading="lazy"></div><div class="d-body"><div class="idx">iii.</div><h4>Canal d'Amour</h4><p>Sculpted sandstone formations and clear water, wrapped in the legend of eternal love.</p><div class="tag">Nature · Romance</div></div></div>
-      <div class="dcard reveal d1"><div class="thumb"><img src="assets/img/td-porto.jpg" alt="Porto Timoni" loading="lazy"></div><div class="d-body"><div class="idx">iv.</div><h4>Porto Timoni</h4><p>Twin beaches of turquoise reached by a scenic hike - a secluded, untouched paradise.</p><div class="tag">Hidden · Adventure</div></div></div>
-      <div class="dcard reveal"><div class="thumb"><img src="assets/img/td-fortress.jpg" alt="The Old Fortress" loading="lazy"></div><div class="d-body"><div class="idx">v.</div><h4>The Old Fortress</h4><p>An iconic Venetian stronghold over the sea, alive with history and panoramic views.</p><div class="tag">Corfu Town · UNESCO</div></div></div>
-      <div class="dcard reveal d1"><div class="thumb"><img src="assets/img/td-beaches.jpg" alt="Corfu beaches" loading="lazy"></div><div class="d-body"><div class="idx">vi.</div><h4>120+ Beaches</h4><p>From northern granite to endless southern sands - the finest just 30 minutes away, where forest meets golden shore.</p><div class="tag">Coastline</div></div></div>
-      <div class="dcard reveal"><div class="thumb"><img src="assets/img/td-activities.jpg" alt="The outdoor life" loading="lazy"></div><div class="d-body"><div class="idx">vii.</div><h4>The Outdoor Life</h4><p>The Corfu Trail at the door, with cycling, horse riding, golf, diving, SUP, paragliding and big-game fishing.</p><div class="tag">Activities</div></div></div>
-      <div class="dcard reveal d1"><div class="thumb"><img src="assets/img/td-gastro.jpg" alt="Corfu gastronomy" loading="lazy"></div><div class="d-body"><div class="idx">viii.</div><h4>A Culinary Renaissance</h4><p>Ambitious young chefs elevating Corfiot cuisine, alongside grandmother's recipes and quiet fine dining.</p><div class="tag">Gastronomy</div></div></div>
+      <div class="dcard reveal"><div class="thumb"><picture><source type="image/webp" srcset="assets/img/td-palace.webp"><img src="assets/img/td-palace.jpg" alt="The Achilleion Palace" loading="lazy"></picture></div><div class="d-body"><div class="idx">i.</div><h4>The Achilleion Palace</h4><p>A 19th-century masterpiece of frescoes, statues and gardens, dedicated to Achilles, with sweeping views over the Ionian Sea.</p><div class="tag">Heritage · 5 min</div></div></div>
+      <div class="dcard reveal d1"><div class="thumb"><picture><source type="image/webp" srcset="assets/img/td-paleo.webp"><img src="assets/img/td-paleo.jpg" alt="Paleokastritsa" loading="lazy"></picture></div><div class="d-body"><div class="idx">ii.</div><h4>Paleokastritsa</h4><p>Crystalline waters, a clifftop monastery and lush coves - the jewel of the north-west coast.</p><div class="tag">Coast · Beaches</div></div></div>
+      <div class="dcard reveal"><div class="thumb"><picture><source type="image/webp" srcset="assets/img/td-canal.webp"><img src="assets/img/td-canal.jpg" alt="Canal d'Amour" loading="lazy"></picture></div><div class="d-body"><div class="idx">iii.</div><h4>Canal d'Amour</h4><p>Sculpted sandstone formations and clear water, wrapped in the legend of eternal love.</p><div class="tag">Nature · Romance</div></div></div>
+      <div class="dcard reveal d1"><div class="thumb"><picture><source type="image/webp" srcset="assets/img/td-porto.webp"><img src="assets/img/td-porto.jpg" alt="Porto Timoni" loading="lazy"></picture></div><div class="d-body"><div class="idx">iv.</div><h4>Porto Timoni</h4><p>Twin beaches of turquoise reached by a scenic hike - a secluded, untouched paradise.</p><div class="tag">Hidden · Adventure</div></div></div>
+      <div class="dcard reveal"><div class="thumb"><picture><source type="image/webp" srcset="assets/img/td-fortress.webp"><img src="assets/img/td-fortress.jpg" alt="The Old Fortress" loading="lazy"></picture></div><div class="d-body"><div class="idx">v.</div><h4>The Old Fortress</h4><p>An iconic Venetian stronghold over the sea, alive with history and panoramic views.</p><div class="tag">Corfu Town · UNESCO</div></div></div>
+      <div class="dcard reveal d1"><div class="thumb"><picture><source type="image/webp" srcset="assets/img/td-beaches.webp"><img src="assets/img/td-beaches.jpg" alt="Corfu beaches" loading="lazy"></picture></div><div class="d-body"><div class="idx">vi.</div><h4>120+ Beaches</h4><p>From northern granite to endless southern sands - the finest just 30 minutes away, where forest meets golden shore.</p><div class="tag">Coastline</div></div></div>
+      <div class="dcard reveal"><div class="thumb"><picture><source type="image/webp" srcset="assets/img/td-activities.webp"><img src="assets/img/td-activities.jpg" alt="The outdoor life" loading="lazy"></picture></div><div class="d-body"><div class="idx">vii.</div><h4>The Outdoor Life</h4><p>The Corfu Trail at the door, with cycling, horse riding, golf, diving, SUP, paragliding and big-game fishing.</p><div class="tag">Activities</div></div></div>
+      <div class="dcard reveal d1"><div class="thumb"><picture><source type="image/webp" srcset="assets/img/td-gastro.webp"><img src="assets/img/td-gastro.jpg" alt="Corfu gastronomy" loading="lazy"></picture></div><div class="d-body"><div class="idx">viii.</div><h4>A Culinary Renaissance</h4><p>Ambitious young chefs elevating Corfiot cuisine, alongside grandmother's recipes and quiet fine dining.</p><div class="tag">Gastronomy</div></div></div>
     </div>
   </div>
 </section>
@@ -1069,7 +1070,12 @@ document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
 
 /* lazy backgrounds */
 (function(){
-  const set=el=>{el.style.backgroundImage="url('"+el.dataset.bg+"')";};
+  const set=el=>{
+    const jpg=el.dataset.bg, webp=jpg.replace(/\.jpg$/,'.webp');
+    el.style.backgroundImage="url('"+jpg+"')";
+    el.style.backgroundImage="-webkit-image-set(url('"+webp+"') type('image/webp'), url('"+jpg+"') type('image/jpeg'))";
+    el.style.backgroundImage="image-set(url('"+webp+"') type('image/webp'), url('"+jpg+"') type('image/jpeg'))";
+  };
   const els=[...document.querySelectorAll('.lazybg')];
   els.filter(el=>el.hasAttribute('data-eager')).forEach(set);     // load straight away
   const lazy=els.filter(el=>!el.hasAttribute('data-eager'));
@@ -1078,6 +1084,20 @@ document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
     const io=new IntersectionObserver((es,o)=>{es.forEach(e=>{if(e.isIntersecting){set(e.target);o.unobserve(e.target);}})},{rootMargin:'50% 0px 200% 0px'});
     lazy.forEach(el=>io.observe(el));
   } else { lazy.forEach(set); }
+})();
+
+/* hero video: guarantee a continuous loop (some mobile browsers stop it) */
+(function(){
+  const hv=document.querySelector('.hero video');
+  if(!hv) return;
+  hv.loop=true; hv.muted=true; hv.setAttribute('playsinline','');
+  const kick=()=>{const p=hv.play(); if(p&&p.catch)p.catch(()=>{});};
+  hv.addEventListener('ended',()=>{hv.currentTime=0; kick();});
+  hv.addEventListener('pause',()=>{if(!hv.ended && !document.hidden) kick();});
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden) kick();});
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting) kick();})).observe(hv);
+  }
 })();
 
 /* section videos */
@@ -1100,7 +1120,7 @@ function render(){const it=curList[curIdx];lbImg.src=it.src;lbImg.alt=it.cap;lbC
 function closeLb(){lb.classList.remove('open');document.body.classList.remove('lock');lb.setAttribute('aria-hidden',true);}
 function nav(d){curIdx=(curIdx+d+curList.length)%curList.length;render();}
 document.querySelectorAll('.gallery').forEach(g=>{
-  const items=[...g.querySelectorAll('.g-item')].map(f=>({src:f.querySelector('img').src,cap:f.dataset.cap||''}));
+  const items=[...g.querySelectorAll('.g-item')].map(f=>{const im=f.querySelector('img');return{src:im.currentSrc||im.src,cap:f.dataset.cap||''};});
   g.querySelectorAll('.g-item').forEach((f,i)=>f.addEventListener('click',()=>openLb(items,i)));
 });
 document.getElementById('lbClose').onclick=closeLb;
